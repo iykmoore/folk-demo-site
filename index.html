@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Annik C (Test Site) | Hair Care</title>
+  <meta name="description" content="Annik C test landing page. A fictional hair-care brand demo." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a href="#top" class="logo">Annik C</a>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-inner">
+        <p class="eyebrow">Test project</p>
+        <h1>Healthy hair, made simple.</h1>
+        <p class="lede">Annik C is a fictional hair-care brand used to test our build, GitHub and deploy pipeline. This page is a placeholder.</p>
+        <a href="#contact" class="btn">Get in touch</a>
+      </div>
+    </section>
+
+    <section id="services" class="services">
+      <h2>Services</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Deep Conditioning</h3>
+          <p>Rich, moisture-restoring treatments for dry and damaged hair.</p>
+        </article>
+        <article class="card">
+          <h3>Scalp Care</h3>
+          <p>Gentle cleansing and scalp routines for a balanced, healthy base.</p>
+        </article>
+        <article class="card">
+          <h3>Custom Hair Routines</h3>
+          <p>Personalised product plans built around your hair type and goals.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Contact</h2>
+      <p>Send us a message and we will get back to you.</p>
+      <form class="contact-form" onsubmit="event.preventDefault(); this.querySelector('.note').textContent = 'Thanks! (demo form, nothing was sent)';">
+        <label>Name <input type="text" name="name" required /></label>
+        <label>Email <input type="email" name="email" required /></label>
+        <label>Message <textarea name="message" rows="4" required></textarea></label>
+        <button type="submit" class="btn">Send message</button>
+        <p class="note" aria-live="polite"></p>
+      </form>
+      <ul class="details">
+        <li>Email: hello@annikc-test.example</li>
+        <li>Phone: +234 000 000 0000</li>
+        <li>Lagos, Nigeria</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Annik C (test site). All rights reserved.</p>
+  </footer>
+</body>
+</html>
